@@ -24,11 +24,14 @@ jobs:
         run: npm run build
 
       - name: Deploy to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Configura o git
+          # Configura o git para usar o GITHUB_TOKEN como autenticação
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+
           # Adiciona e commita os arquivos gerados
           git add -f build
           git commit -m "Deploy to GitHub Pages"
