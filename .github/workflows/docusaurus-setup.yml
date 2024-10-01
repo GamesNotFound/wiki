@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    # Revisar a documentação do GitHub Actions para definir melhor gatilhos e caminhos
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   build:
@@ -21,7 +19,13 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --no-lockfile
+        run: |
+          if [ ! -f yarn.lock ]; then
+            echo "yarn.lock not found, generating it now..."
+            yarn install
+          else
+            yarn install --frozen-lockfile
+          fi
 
       - name: Build website
         run: yarn build
@@ -35,12 +39,10 @@ jobs:
     name: Deploy to GitHub Pages
     needs: build
 
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
+      pages: write
+      id-token: write
 
-    # Deploy to the github-pages environment
     environment:
       name: github-pages
 
