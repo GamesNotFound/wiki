@@ -6,22 +6,24 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'GamesNotFound',
-  tagline: 'Witty description',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://GamesNotFound.github.io',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/wiki/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'GamesNotFound', // Usually your GitHub org/user name.
-  projectName: 'GamesNotFound.github.io', // Usually your repo name.
+  projectName: 'wiki', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -74,9 +76,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/404-avatar.png',
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'GamesNotFound',
+        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -120,8 +122,8 @@ const config = {
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'X',
+                href: 'https://x.com/docusaurus',
               },
             ],
           },

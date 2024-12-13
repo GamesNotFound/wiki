@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Quem nós somos',
+    title: 'Easy to Use',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        A GamesNotFound é um estúdio de jogos composto por um grupo de estudantes
-	de Ciência da Computação da UENF (Universidade Estadual Norte Fluminense - Darcy Ribeiro).
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Nosso objetivo',
+    title: 'Focus on What Matters',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        O nosso objetivo é criar projetos criativos com Godot, e incentivar desenvolvedores 
-	e alunos a programarem e descobrir mais sobre game design!
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Metodologia e como contribuir',
+    title: 'Powered by React',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Utilizaremos a metodologia (DESCRIÇÃO), que promove (DESCRIÇÃO 2).
-	Para contribuir, entre em contato conosco via (DESCRIÇÃO 3).
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
