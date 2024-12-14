@@ -111,7 +111,7 @@ git push origin feature/nome-descritiva
 ## Dicas Específicas para Windows
 
 ### Configurações Adicionais
-- Instale o Git Bash como alternativa ao CMD
+- Use o Git Bash como alternativa ao CMD
 - Configure o Git para usar LF (Line Feed) em vez de CRLF
 ```cmd
 git config --global core.autocrlf input
