@@ -53,18 +53,9 @@ git clone git@github.com:SEU-USUARIO/NOME-DO-REPOSITORIO.git
 cd NOME-DO-REPOSITORIO
 ```
 
-## 2. Configurando Repositórios Remotos
-```cmd
-# Adicionar repositório original como upstream via SSH
-git remote add upstream git@github.com:AUTOR-ORIGINAL/NOME-DO-REPOSITORIO.git
+## 2. Fluxo de Trabalho com Branches
 
-# Verificar repositórios remotos
-git remote -v
-```
-
-## 3. Fluxo de Trabalho com Branches
-
-### 3.1 Criando uma Nova Branch
+### 2.1 Criando uma Nova Branch
 ```cmd
 # Sempre crie uma branch a partir da branch principal (geralmente main ou master)
 git checkout main
@@ -74,12 +65,12 @@ git pull upstream main
 git checkout -b feature/nome-descritivo-da-contribuicao
 ```
 
-### 3.2 Trabalhando no Projeto Godot
+### 2.2 Trabalhando no Projeto Godot
 1. Abra o projeto no Godot
 2. Faça suas modificações/implementações
 3. Teste cuidadosamente suas alterações
 
-## 4. Commitando Alterações
+## 3. Commitando Alterações
 ```cmd
 # Adicionar arquivos modificados
 git add .
@@ -93,13 +84,13 @@ git commit -m "Descrição clara e concisa das alterações"
 - Seja sucinto e objetivo
 - Descreva o que foi modificado, não como
 
-## 5. Enviando Alterações
+## 4. Enviando Alterações
 ```cmd
 # Enviar branch para seu repositório no GitHub
 git push origin feature/nome-descritiva
 ```
 
-## 6. Criando Pull Request
+## 5. Criando Pull Request
 1. Acesse seu repositório no GitHub
 2. Clique em "Compare & pull request"
 
@@ -112,7 +103,7 @@ git push origin feature/nome-descritiva
    - Contexto da mudança
    - Prints/GIFs de demonstração (se aplicável)
 
-## 7. Após o Pull Request
+## 6. Após o Pull Request
 - Aguarde revisão dos mantenedores
 - Esteja preparado para fazer ajustes
 - Responda comentários rapidamente
