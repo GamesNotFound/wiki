@@ -1,4 +1,8 @@
-# Guia Completo: Como Contribuir para um Projeto Godot no GitHub (Windows)
+---
+sidebar_position: 1
+---
+
+# Como Contribuir (Windows)
 
 ## Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
@@ -14,14 +18,20 @@ Antes de começar, certifique-se de ter instalado:
 1. Acesse o repositório do projeto no GitHub
 2. Clique no botão "Fork" no canto superior direito da página
 3. Escolha sua conta para criar uma cópia do repositório
+
+
 ![Botão de Fork no GitHub](/img/github-fork.png)
+
 
 ### 1.2 Botão de Clone
 1. No repositório do GitHub, localize o botão verde "Code" no lado direito da página, logo acima da lista de arquivos
 2. Clique no botão verde "Code"
 3. Selecione a aba "SSH"
 4. Clique no ícone de copiar (clipboard) ao lado do link SSH
+
+
 ![Botão de Clone SSH no GitHub](/img/github-clone-ssh.png)
+
 
 ### 1.3 Clonar o Repositório
 
@@ -93,7 +103,9 @@ git push origin feature/nome-descritiva
 1. Acesse seu repositório no GitHub
 2. Clique em "Compare & pull request"
 
+
 ![Criando Pull Request](/img/github-pull-request.png)
+
 
 3. Preencha o template de PR com:
    - Descrição das alterações
@@ -122,21 +134,17 @@ git config --global core.autocrlf input
 - Mantenha suas branches atualizadas
 - Faça commits pequenos e significativos
 - Respeite o código de conduta do projeto
-- Teste completamente antes de submeter
+- Teste completamente antes de enviar
 
 ## Resolução de Problemas Comuns
 ### Conflitos de Merge
 Se houver conflitos:
-1. `git fetch upstream`
-2. `git merge upstream/main`
-3. Resolva conflitos manualmente
-4. Faça novo commit
+- Escrever pagina tutorial para conflitos de merge
 
 ## Recursos Adicionais
 - [Documentação Oficial do Git](https://git-scm.com/docs)
 - [Guia do GitHub](https://guides.github.com/)
 - [Documentação Godot](https://docs.godotengine.org/)
-- [Tutorial de Setup de SSH com GH-CLI no Windows](/tutorial-ssh-gh-cli-windows)
-
+- Adicionar link para pagina de como fazer o setup do GH-CLI com SSH
 ## Conclusão
 Seguindo estes passos, você estará preparado para contribuir efetivamente em projetos Godot no GitHub, utilizando Windows!
