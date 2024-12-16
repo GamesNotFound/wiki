@@ -13,7 +13,51 @@ sidebar_position: 3
 
 ## Autenticação
 
-COLE AQUI
+#### 1.
+
+```cmd
+# Após terminar a instalação, abra o CMD e digite:  
+gh auto login
+```
+
+#### 2.
+
+```cmd
+# Está perguntando por onde usa o GitHub, use as setinhas para selecionar a opção GitHub.com e confirme apertando enter
+Where do you use GitHub? [Use arows to move, type to filter]    
+GitHub.com  
+Other
+```
+
+#### 3.
+
+```cmd
+# Está perguntando qual seu protocolo preferido, use as setinhas para escolher SSH e confirme
+What is your preferred protocol for git operations:  
+```
+
+#### 4.
+
+```cmd
+# Está pedindo uma senha para sua nova chave SSH, é opcional, apenas confirme sem digitar nada
+Enter a passphrase for your new SSH key(optional):  
+```
+
+#### 5.
+
+```cmd
+# Um nome para sua chave SSH, escolha um à sua escolha e confirme
+Title for your SSH key: (GitHub CLI):  
+```
+
+#### 6.
+
+```cmd
+# Está perguntando como irá autenticar, escolha a primeira opção usando as setinhas e confirmando para fazer login pelo novegador
+How would you like to authenticate GitHub CLI?
+Login with a web browser  
+Paste an authentication token    
+```
 
 O GH será usado apenas para que  o Git saiba qual é sua conta do Github mas caso deseje usar o GH seguem comandos
 
