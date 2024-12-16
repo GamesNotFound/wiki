@@ -44,7 +44,7 @@ Other
 
 ```cmd
 # Está perguntando qual seu protocolo preferido, use as setinhas para escolher SSH e confirme
-What is your preferred protocol for git operations on this:  
+What is your preferred protocol for git operations:  
 ```
 
 #### 4.
